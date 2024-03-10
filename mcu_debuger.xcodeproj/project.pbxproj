@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		305AFF202B9C18EC0016C64A /* mcu_debugerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305AFF1F2B9C18EC0016C64A /* mcu_debugerApp.swift */; };
+		305AFF222B9C18EC0016C64A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305AFF212B9C18EC0016C64A /* ContentView.swift */; };
+		305AFF242B9C18EC0016C64A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305AFF232B9C18EC0016C64A /* Assets.xcassets */; };
+		305AFF272B9C18EC0016C64A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305AFF262B9C18EC0016C64A /* Preview Assets.xcassets */; };
+		305AFF2F2B9C19C60016C64A /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 305AFF2E2B9C19C60016C64A /* CocoaAsyncSocket */; };
+		305AFF312B9C1E6B0016C64A /* udp_agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305AFF302B9C1E6B0016C64A /* udp_agent.swift */; };
+		305AFF332B9C23990016C64A /* send_button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305AFF322B9C23990016C64A /* send_button.swift */; };
+		305AFF352B9C27A10016C64A /* Joystic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305AFF342B9C27A10016C64A /* Joystic.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		305AFF1C2B9C18EC0016C64A /* mcu_debuger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mcu_debuger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		305AFF1F2B9C18EC0016C64A /* mcu_debugerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcu_debugerApp.swift; sourceTree = "<group>"; };
+		305AFF212B9C18EC0016C64A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		305AFF232B9C18EC0016C64A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		305AFF262B9C18EC0016C64A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		305AFF302B9C1E6B0016C64A /* udp_agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = udp_agent.swift; sourceTree = "<group>"; };
+		305AFF322B9C23990016C64A /* send_button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = send_button.swift; sourceTree = "<group>"; };
+		305AFF342B9C27A10016C64A /* Joystic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joystic.swift; sourceTree = "<group>"; };
+		305AFF372B9C93310016C64A /* mcu_debuger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mcu_debuger.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305AFF192B9C18EC0016C64A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305AFF2F2B9C19C60016C64A /* CocoaAsyncSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305AFF132B9C18EC0016C64A = {
+			isa = PBXGroup;
+			children = (
+				305AFF1E2B9C18EC0016C64A /* mcu_debuger */,
+				305AFF1D2B9C18EC0016C64A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		305AFF1D2B9C18EC0016C64A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305AFF1C2B9C18EC0016C64A /* mcu_debuger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305AFF1E2B9C18EC0016C64A /* mcu_debuger */ = {
+			isa = PBXGroup;
+			children = (
+				305AFF372B9C93310016C64A /* mcu_debuger.entitlements */,
+				305AFF1F2B9C18EC0016C64A /* mcu_debugerApp.swift */,
+				305AFF212B9C18EC0016C64A /* ContentView.swift */,
+				305AFF232B9C18EC0016C64A /* Assets.xcassets */,
+				305AFF252B9C18EC0016C64A /* Preview Content */,
+				305AFF302B9C1E6B0016C64A /* udp_agent.swift */,
+				305AFF322B9C23990016C64A /* send_button.swift */,
+				305AFF342B9C27A10016C64A /* Joystic.swift */,
+			);
+			path = mcu_debuger;
+			sourceTree = "<group>";
+		};
+		305AFF252B9C18EC0016C64A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				305AFF262B9C18EC0016C64A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		305AFF1B2B9C18EC0016C64A /* mcu_debuger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305AFF2A2B9C18EC0016C64A /* Build configuration list for PBXNativeTarget "mcu_debuger" */;
+			buildPhases = (
+				305AFF182B9C18EC0016C64A /* Sources */,
+				305AFF192B9C18EC0016C64A /* Frameworks */,
+				305AFF1A2B9C18EC0016C64A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mcu_debuger;
+			packageProductDependencies = (
+				305AFF2E2B9C19C60016C64A /* CocoaAsyncSocket */,
+			);
+			productName = mcu_debuger;
+			productReference = 305AFF1C2B9C18EC0016C64A /* mcu_debuger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		305AFF142B9C18EC0016C64A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					305AFF1B2B9C18EC0016C64A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 305AFF172B9C18EC0016C64A /* Build configuration list for PBXProject "mcu_debuger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 305AFF132B9C18EC0016C64A;
+			packageReferences = (
+				305AFF2D2B9C19C60016C64A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+			);
+			productRefGroup = 305AFF1D2B9C18EC0016C64A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				305AFF1B2B9C18EC0016C64A /* mcu_debuger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305AFF1A2B9C18EC0016C64A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305AFF272B9C18EC0016C64A /* Preview Assets.xcassets in Resources */,
+				305AFF242B9C18EC0016C64A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305AFF182B9C18EC0016C64A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305AFF222B9C18EC0016C64A /* ContentView.swift in Sources */,
+				305AFF332B9C23990016C64A /* send_button.swift in Sources */,
+				305AFF202B9C18EC0016C64A /* mcu_debugerApp.swift in Sources */,
+				305AFF312B9C1E6B0016C64A /* udp_agent.swift in Sources */,
+				305AFF352B9C27A10016C64A /* Joystic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		305AFF282B9C18EC0016C64A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		305AFF292B9C18EC0016C64A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		305AFF2B2B9C18EC0016C64A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mcu_debuger/mcu_debuger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mcu_debuger/Preview Content\"";
+				DEVELOPMENT_TEAM = V9J6H8S566;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taiga.mcu-debuger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		305AFF2C2B9C18EC0016C64A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mcu_debuger/mcu_debuger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mcu_debuger/Preview Content\"";
+				DEVELOPMENT_TEAM = V9J6H8S566;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taiga.mcu-debuger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305AFF172B9C18EC0016C64A /* Build configuration list for PBXProject "mcu_debuger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305AFF282B9C18EC0016C64A /* Debug */,
+				305AFF292B9C18EC0016C64A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305AFF2A2B9C18EC0016C64A /* Build configuration list for PBXNativeTarget "mcu_debuger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305AFF2B2B9C18EC0016C64A /* Debug */,
+				305AFF2C2B9C18EC0016C64A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		305AFF2D2B9C19C60016C64A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		305AFF2E2B9C19C60016C64A /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305AFF2D2B9C19C60016C64A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 305AFF142B9C18EC0016C64A /* Project object */;
+}
